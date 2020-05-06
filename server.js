@@ -20,5 +20,9 @@ require('./server/config/routes')(app);
 
 app.use(express.static(__dirname + '/public/dist/public'));
 
+app.get('*', function(req, res) {
+    res.sendfile('./public/dist/public/index.html');
+  })
+
 app.listen(3000, console.log('on 3000'));
 
