@@ -4,12 +4,16 @@
   height: 100vh;
   text-align: center;
 }
-
+.name {
+  color: #70F0AE;
+}
 .title {
   font-size: 45px;
 }
 .todo {
   color: #70F0AE;
+  font-size: 50px;
+  font-weight: bold;
 }
 table {
   font-family: arial, sans-serif;
@@ -30,6 +34,8 @@ td, th {
 .main-box {
   /* margin-top: 100px; */
   background-color: #242424;
+  max-width: 600px;
+  margin: auto;
 }
 /* tr:nth-child(even) {
   background-color: #dddddd;
